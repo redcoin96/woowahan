@@ -1,0 +1,33 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.m {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.pc {
+  @include mobile {
+    display: none;
+  }
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+}
